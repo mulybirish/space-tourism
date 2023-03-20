@@ -14,7 +14,7 @@ const Container = styled.div`
   color: white;
   padding: 40px; */
 `;
-const PlanetInfo = ({ planet, data }) => {
+const PlanetInfo = ({ planet, children }) => {
   return (
     <Container>
       <div>

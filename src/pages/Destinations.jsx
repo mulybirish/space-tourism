@@ -20,11 +20,13 @@ const Container = styled.div`
 `;
 const Section = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
   /* flex-direction: row; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
   gap: 10px;
+  color: green;
 `;
 const ListItem = styled.li`
   background-color: yellow;
@@ -40,6 +42,10 @@ const ImageHolder = styled.div`
   width: 400px; */
 `;
 const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  /* margin-top: 100px; */
   /* position: absolute; */
   /* left: 0%;
   right: 35.84%;
@@ -58,6 +64,10 @@ const Destinations = () => {
   return (
     <Container>
       <Section>
+        <h1>dfgdfgdf</h1>
+        <h1>dfgdfgdf</h1>
+        <h1>dfgdfgdf</h1>
+        <h1>dfgdfgdf</h1>
         <Buttons>
           {data.destinations.map((des) => {
             return (
@@ -76,7 +86,7 @@ const Destinations = () => {
         </Buttons>
       </Section>
       {/* <ImageHolder><img src={planet.images[0]} alt="" /></ImageHolder> */}
-      {/* <PlanetImage planet={planet} /> */}
+      <PlanetImage planet={planet} />
     </Container>
   );
 };
